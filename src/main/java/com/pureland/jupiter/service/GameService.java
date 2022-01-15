@@ -187,7 +187,7 @@ public class GameService { // use to get info from twitch api
         return res;
     }
 
-    private List<Item> searchByType(String gameId, ItemType type, int limit) throws TwitchException {
+    public List<Item> searchByType(String gameId, ItemType type, int limit) throws TwitchException {
         List<Item> items = new ArrayList<>();
 
         switch (type) {
